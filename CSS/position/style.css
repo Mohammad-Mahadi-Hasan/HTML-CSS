@@ -1,0 +1,36 @@
+.div1{
+    border: 3px solid green;
+    padding: 5px;
+    position: static;
+    left: 20%;
+}
+
+.div2{
+    border: 3px solid yellowgreen;
+    padding: 5px;
+    position: relative;
+    left: 20%;  
+}
+
+.h{
+    border: 3px solid red;
+    padding: 5px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+.div4{
+    border: 3px solid royalblue;
+    padding: 5px;
+    position: relative;
+    height: 100px;
+}
+
+.div5{
+    border: 3px solid yellow;
+    padding: 5px;
+    position: absolute;
+    left: 20%;
+    top: 30px;
+}

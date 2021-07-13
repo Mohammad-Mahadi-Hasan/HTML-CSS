@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design 1</title>
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="laptop.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+.menu{
+    background-color: teal;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+a:hover{
+    background-color: tomato;
+}
+/* 
+* Small devices (portrait tablets and large phones, 600px and up) *
+@media only screen and (min-width: 600px) {
+    
+}
+
+* Medium devices (landscape tablets, 768px and up) *
+@media only screen and (min-width: 768px) {
+
+}
+
+
+
+* Extra large devices (large laptops and desktops, 1200px and up) *
+@media only screen and (min-width: 1200px) {
+    
+} */
+
+    </style>
+</head>
+<body>
+    
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Toutorial</a>
+        <a href="#">About Me</a>
+        <a href="#">Contruct Me</a>
+    </div>
+</body>
+</html>

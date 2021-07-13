@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table</title>
+
+    <style>
+        table{
+
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+
+        th,td{
+
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        th{
+
+            background-color: greenyellow;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        td{
+
+            padding: 5px;
+        }
+
+        tr:nth-child(even){
+            background-color: grey;
+        }
+
+        tr:nth-child(odd){
+            background-color: gold;
+        }
+
+        tr:hover{
+                background-color: tomato;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>Student Details</caption>
+        <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>GPA</th>
+                <th>PHONE</th>
+                <th>BIO</th>
+
+        </tr>
+
+        <tr>
+                <td>101</td>
+                <td>Mahadi</td>
+                <td>4.00</td>
+                <td>017264878234</td>
+                <td> Sit labore tempor amet invidunt dolor takimata lorem consetetur sit, vero ut gubergren dolores ipsum et, sit invidunt magna duo.</td>
+
+        </tr>
+
+        <tr>
+            <td>1012</td>
+            <td>akash</td>
+            <td>5.00</td>
+            <td>015264878234</td>
+            <td> Sit labore tempor amet invidunt dolor takimata lorem consetetur sit, vero ut gubergren dolores ipsum et, sit invidunt magna duo.</td>
+
+    </tr>
+
+    <tr>
+        <td>103</td>
+        <td>rafi</td>
+        <td>4.00</td>
+        <td>017264878234</td>
+        <td> Sit labore tempor amet invidunt dolor takimata lorem consetetur sit, vero ut gubergren dolores ipsum et, sit invidunt magna duo.</td>
+
+</tr>
+
+<tr>
+    <td>104</td>
+    <td>Alif</td>
+    <td>3.00</td>
+    <td>016264878234</td>
+    <td> Sit labore tempor amet invidunt dolor takimata lorem consetetur sit, vero ut gubergren dolores ipsum et, sit invidunt magna duo.</td>
+
+</tr>
+    </table>
+</body>
+</html>

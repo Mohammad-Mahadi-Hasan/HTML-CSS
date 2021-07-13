@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid View 1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .header{
+            background-color: coral;
+            padding: 1% 5%;
+            color: white;
+            text-align: center;
+        }
+
+        .nav-menu{
+            padding: 1% 5%;
+            background-color: teal;
+        }
+
+        .nav-menu a{
+            color: white;
+            padding: 10px;
+            font-size: 1.2rem;
+            display: block;
+            text-decoration: none;
+        }
+
+        .main{
+            padding: 1% 5%;
+            background-color: turquoise;
+        }
+
+        .aside{
+            padding: 1% 5%;
+            background-color: violet;
+            text-align: center;
+
+        }
+
+        .footer{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+.row::after{
+content: '';
+clear: both;
+display: table;
+}
+
+@media screen and (max-width:600px){
+    [class*=col-]{
+        width: 100%;
+    }
+
+    .nav-menu a{
+           text-align: center;
+           background-color: violet;
+           margin: 10px;
+        }
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mahadi Hasan</h1>
+    </div>
+
+    <div class="row">
+        <div class="nav-menu col-2">
+            <a href="#">Home</a>
+            <a href="#">Toutorial</a>
+            <a href="#">Contruct Me</a>
+        </div>
+
+        <div class="main col-7">
+            <h1>I am a web desiganer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima accusantium 
+                voluptates, ratione dolorum quia voluptas veritatis eum ut doloremque?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum quo ab repellat nobis porro fugit necessitatibus consequatur! Velit aspernatur aliquam laborum, voluptas eaque natus vitae, dignissimos quos ipsam itaque, sunt praesentium eius impedit obcaecati totam provident labore sapiente voluptates laudantium quae! Commodi veniam blanditiis provident suscipit illo placeat. Consequatur fuga laudantium est dignissimos vel natus beatae, magnam iste aliquam voluptas quibusdam autem error saepe? Accusamus laudantium deleniti, perferendis labore nobis hic quis quaerat quas dolorum molestias culpa, dicta at? Velit pariatur maiores harum necessitatibus nesciunt facilis doloremque quo doloribus laboriosam, odit a consequuntur sapiente. Architecto impedit, rem, cupiditate distinctio eveniet nam minima libero esse eum nemo consectetur eos natus nulla quia possimus velit, harum corrupti similique fugiat ut adipisci quos. Odio, mollitia iure reiciendis, magnam dolorem cumque impedit a totam quae sapiente incidunt soluta.
+                     Provident quasi natus sequi quae iure repellendus, incidunt quod esse asperiores cum beatae unde neque?</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi libero corporis quo eaque sit mollitia enim at velit, repellat eveniet distinctio eos illum expedita dignissimos sed a aliquid voluptates fugiat voluptas quos corrupti. Repellat ullam vitae fugiat saepe totam sit sed molestias, velit et mollitia? Laboriosam magnam placeat doloribus? Accusamus eveniet fugit odio laborum eos delectus, corrupti ipsam placeat fuga magni tempora doloremque eius debitis soluta quod dolore! Quasi ex eaque officia voluptas nostrum aliquid unde sint quas vitae nihil vel, laboriosam esse ipsa accusamus iure, commodi deserunt ipsum beatae cupiditate suscipit assumenda praesentium odio! Rem, placeat. Atque, quibusdam vitae? Neque inventore, magni, eius culpa quasi rerum laudantium quisquam possimus id omnis hic deleniti voluptas reiciendis veritatis voluptate ex cumque nobis necessitatibus veniam quia repudiandae fuga quidem beatae aut. Dolorum quis voluptas, quo sapiente esse, recusandae sunt est,
+                          maiores voluptates enim vitae vero placeat nemo. Culpa exercitationem quo incidunt expedita?</p>
+        </div>
+
+        <div class="aside col-3">
+            <h2>What I love?</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo porro 
+                perspiciatis laborum adipisci voluptatem dolorum eum, enim rem? Qui, beatae?</p>
+
+                <h2>What I Do?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+                    , natus quis. Aspernatur sunt dolorum cum adipisci dicta, praesentium magnam ratione.</p>
+
+                    <h2>What I Don't Love?</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, necessitatibus
+                         et! Ipsa numquam illo ex dolorem, porro delectus ipsum. Sit?</p>
+
+                         <h2>What I don't Do?</h2>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor 
+                             asperiores deserunt, consequuntur a nulla debitis vel officiis ullam impedit accusantium!</p>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        &copy; Study With Mahadi 2021. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, adipisci.
+    </div>
+</body>
+</html>

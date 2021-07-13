@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Layout</title>
+    <style>
+.flex-conteinar{
+    background-color: rosybrown;
+    display: flex;
+    /* flex-wrap: wrap;
+    flex-direction: column-reverse; */
+    flex-flow: wrap row;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+
+}
+
+.flex-conteinar > div{
+background-color: royalblue;
+/* width: 100%; */
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="flex-conteinar">
+
+        <div class="div1" style="order: 2; flex-basis: 150px;">
+Div1
+        </div>
+
+        <div class="div2" style="order: 1;">
+Div2
+        </div>
+        <div class="div3" style="order: 3;">
+            Div3
+                 
+        </div>
+
+
+                    <div class="div4" style="order: 4;">
+                        Div4
+                               
+                    </div>
+
+                    <div class="div5" style="order: 5;">
+                        Div5
+                                </div>
+                        
+                                <div class="div6" style="order: 6;"> 
+                        Div6
+                              </div>
+                                <div class="div7" style="order: 7;">
+                                    Div7
+                                         
+                                </div>
+                        
+                        
+                                            <div class="div8" style="order: 8;">
+                                                Div8
+                                                       
+                                            </div>
+    </div>
+</body>
+</html>

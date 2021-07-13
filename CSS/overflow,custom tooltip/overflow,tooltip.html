@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltip</title>
+    <style>
+        div{
+
+            height: 100px;
+            width: 200px;
+            background-color: aqua;
+            border: 5px solid red;
+            overflow: auto;
+        }
+
+        .tooltip .tooltext{
+            visibility: hidden;
+            width: 150px;
+            background-color: red;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 1;
+
+        }
+
+        .tooltip{
+
+            position: relative;
+        }
+
+        .tooltip:hover .tooltext{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#" class="tooltip">
+        Facebook
+
+        <span class="tooltext">Facebook is a social media</span>
+    </a>
+
+    <div>Ipsum accusam diam amet sed justo, duo duo justo dolore lorem amet erat stet consetetur. Justo diam invidunt dolor magna accusam dolor dolor dolores amet, sed et et lorem lorem ipsum amet dolor, ut eos ea nonumy est duo. Et elitr amet et et sit magna labore voluptua. Erat eirmod dolore voluptua stet gubergren ipsum no vero eos. Est amet sed justo et dolor magna dolore dolor, lorem et ipsum lorem et dolores kasd dolores. Vero dolores ut consetetur eos justo, diam sadipscing voluptua sit rebum no consetetur magna. Sed sadipscing ipsum clita clita. Aliquyam diam sed no dolores. Dolores.</div>
+    </body>
+</html>
